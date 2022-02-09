@@ -2,10 +2,10 @@
 
 * * *
 
-- 디렉토리 구조
+- wildfly 주요 설정 파일
 
 ```
-. # wildfly 주요 설정 파일
+.
 └── wildfly_bin
     ├── add-user.sh
     ├── env.properties
