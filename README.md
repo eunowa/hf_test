@@ -16,4 +16,10 @@
     ├── stop.sh
     └── tail.sh
 
+
+.
+└── httpd_bin
+    ├── start.sh
+    ├── stop.sh
+    └── restart.sh
 ```
