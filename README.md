@@ -1,2 +1,19 @@
-# hf_test
-hyperframe_test
+# hf\_test
+
+* * *
+
+- 디렉토리 구조
+
+```
+. # wildfly 주요 설정 파일
+└── wildfly_bin
+    ├── add-user.sh
+    ├── env.properties
+    ├── jboss-cli.sh
+    ├── nohup.sh
+    ├── start.sh
+    ├── status.sh
+    ├── stop.sh
+    └── tail.sh
+
+```
