@@ -18,7 +18,7 @@
 
 .
 └── httpd_bin
+    ├── restart.sh
     ├── start.sh
-    ├── stop.sh
-    └── restart.sh
+    └── stop.sh
 ```
