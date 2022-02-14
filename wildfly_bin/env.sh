@@ -1,22 +1,20 @@
 #!/bin/sh
-#. ./function.sh
-
 DATE=`date +%Y%m%d_%H%M%S`
 
 ##### JBOSS Directory Setup #####
-export JBOSS_HOME=/Users/ehkim/was/wildfly
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home
+export JBOSS_HOME=/app/hfwas/wildfly
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64
 export DOMAIN_GROUP_NAME=WWW
-export DOMAIN_BASE=/Users/ehkim/was/hf_instance
+export DOMAIN_BASE=/app/hfwas/hf_instance
 export SERVER_NAME=INS11
 export JBOSS_LOG_DIR=$DOMAIN_BASE/$SERVER_NAME/log
 
 ##### Configration File #####
 export HOST_NAME=`hostname`
 export NODE_NAME=$SERVER_NAME
-export CONFIG_FILE=standalone.xml
+export CONFIG_FILE=standalone-ha.xml
 export PORT_OFFSET=0
-export JBOSS_USER=ehkim
+export JBOSS_USER=hfwas
 
 ##### Bind Address #####
 export BIND_ADDR=`hostname`
