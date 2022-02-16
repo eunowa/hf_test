@@ -25,7 +25,7 @@ alias hflog2='cd $HOME/hf_instance/INS12/log'
 alias d1='cd $HOME/deployment/www'
 
 ########## WEB ##########
-##### HTTPD Setting #####
+##### HTTPD #####
 HTTPD_HOME=$HOME/httpd;export HTTPD_HOME
 
 ##### Alias #####
