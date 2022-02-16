@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+        id="test" version="2.5">
+
+    <display-name>www</display-name>
+
+    <distributable/>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <session-config>
+        <cookie-config>
+            <name>ehkimSessionCookie</name>
+        </cookie-config>
+    </session-config>
+
+    <security-constraint>
+        <display-name></display-name>
+        <web-resource-collection>
+            <web-resource-name>restricted methods</web-resource-name>
+            <url-pattern>/*</url-pattern>
+            <http-method>TRACE</http-method>
+            <http-method>DELETE</http-method>
+            <http-method>PUT</http-method>
+            <http-method>HEAD</http-method>
+            <http-method>OPTIONS</http-method>
+        </web-resource-collection>
+        <auth-constraint />
+    </security-constraint>
+</web-app>
