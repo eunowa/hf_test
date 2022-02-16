@@ -1,0 +1,3 @@
+<%                                                                                        
+out.println("index.jsp");
+%>
