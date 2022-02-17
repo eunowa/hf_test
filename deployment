@@ -1,0 +1,5 @@
+    <deployments>
+        <deployment name="www" runtime-name="www.war">
+            <fs-exploded path="/app/hfwas/deployment/www"/>
+        </deployment>
+    </deployments>
